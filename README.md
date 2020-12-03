@@ -1,3 +1,79 @@
+# What is this?
+
+This is a simple Machine learning React app that draws face mesh points on faces from a web camera in real time using a pre-trained model from tensorflow called `@tensorflow-models/facemesh`. This application is cappable of detecting 468 face points and draw the face mesh on each face on the web camera.
+
+## This app is using
+
+- React WebCam
+- Tensorflow.js
+
+## Installation of required dependencies
+
+## Installation of React WebCam using `npm`
+
+`$ npm i react-webcam`
+
+## Installation of React WebCam using `yarn`
+
+`yarn add react-webcam`
+
+## Installation of tensorflow and the pretrained model for face points detections model using `npm`
+
+`$ npm i @tensorflow/tfjs-core @tensorflow/tfjs @tensorflow-models/facemesh @tensorflow/tfjs-converter @tensorflow/tfjs-backend-webgl or @tensorflow/tfjs-backend-wasm`
+
+## Installation of tensorflow and the pretrained model for face points detections model using using yarn
+
+```
+$ yarn add @tensorflow-models/facemesh
+$ yarn add @tensorflow/tfjs-core, @tensorflow/tfjs-converter
+$ yarn add @tensorflow/tfjs-backend-wasm # or @tensorflow/tfjs-backend-webgl
+
+```
+
+## Scripts tags
+
+In order for this application to work we must include the following scripts in the index.html file as well if you don't want to do the installation process
+
+```
+<!-- Require the peer dependencies of facemesh. -->
+<script src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+<script src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+
+<!-- You must explicitly require a TF.js backend if you're not using the tfs union bundle. -->
+<script src="https://unpkg.com/@tensorflow/tfjs-backend-wasm@2.1.0/dist/tf-backend-wasm.js"></script>
+<!-- Alternatively you can use the WebGL backend: <script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script> -->
+```
+
+## The URL to the repository of blazeface models.
+
+[click here](https://github.com/tensorflow/tfjs-models/tree/master/facemesh)
+
+# How to test this application.
+
+### Clone this repository using the following command:
+
+`git clone [URL to this repository]`
+
+### Navigate to the project folder of this app by running the following command:
+
+`cd face-landmarks-detection-js-face-mesh-`
+
+### Install the dependencies by running the following command:
+
+`npm install`
+
+### Then:
+
+`npm start or npm run start`
+
+### The react development server will start listening on port 3000 click the following URL:
+
+URL: [test application](http://localhost:3000)
+
+## Why this simple application?
+
+This application was created for development and practice purposes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
